@@ -25,7 +25,7 @@ function Validate() {
 }
 
 function Validation(validator: IValidator) {
-  return function(target: Object, propertyKey: string | symbol, parameterIndex: number) {
+  return function(target: Object, propertyKey: string, parameterIndex: number) {
     let validations: any[] = Reflect.getOwnMetadata('Validation', target, propertyKey) || [];
     validations.push({ validator, parameterIndex })
     Reflect.defineMetadata('Validation', validations, target, propertyKey);
