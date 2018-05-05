@@ -1,0 +1,17 @@
+{
+  "name": "playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "rimraf ./dist && tsc && node ./dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "reflect-metadata": "^0.1.12",
+    "rimraf": "^2.6.2",
+    "tslint": "^5.10.0",
+    "typescript": "^2.8.3"
+  }
+}
